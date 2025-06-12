@@ -1,0 +1,358 @@
+/* Global Styles */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #0dcaf0;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 56px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    font-weight: 700;
+}
+
+.section-title:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+    margin: 15px auto;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+    color: white;
+    padding: 120px 0 80px;
+    text-align: left;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-section h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hero-section .lead {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Team Section */
+.team-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-img {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.team-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Problem Section */
+.problem-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.problem-icon {
+    font-size: 3rem;
+    color: var(--danger-color);
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    padding: 15px 0;
+}
+
+/* Solution Section */
+.feature-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.feature-list li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.benefit-card {
+    background-color: #f8f9fa;
+    border-left: 5px solid var(--success-color);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Market Section */
+.market-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    height: 100%;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    flex: 1;
+    margin: 0 5px;
+}
+
+.stat-item h4 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.target-groups {
+    margin-top: 20px;
+}
+
+.target-group {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.target-group i {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Validation Section */
+.validation-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.validation-list, .validation-method {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.validation-list li, .validation-method li {
+    margin-bottom: 10px;
+}
+
+.feedback-card {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+}
+
+.feedback-card i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0.2;
+}
+
+.feedback-card p {
+    margin-top: 20px;
+}
+
+.result-card {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* Business Model Section */
+.business-model-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+.canvas-placeholder {
+    background-color: #f8f9fa;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    padding: 50px;
+    margin-top: 20px;
+    color: #6c757d;
+}
+
+/* Competitors Section */
+.competitor-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 100%;
+}
+
+.competitor-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.competitor-list li {
+    margin-bottom: 10px;
+}
+
+.competitor-image {
+    background-color: #f8f9fa;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Differentiation Section */
+.differentiation-card, .opportunity-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    height: 100%;
+}
+
+.advantage-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.advantage-list li {
+    margin-bottom: 15px;
+}
+
+.opportunity-icon {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Footer */
+.footer {
+    padding: 50px 0 20px;
+}
+
+.footer hr {
+    margin: 30px 0;
+    opacity: 0.1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .hero-section {
+        text-align: center;
+        padding: 100px 0 60px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .section {
+        padding: 60px 0;
+    }
+    
+    .stats-container {
+        flex-direction: column;
+    }
+    
+    .stat-item {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-section h2 {
+        font-size: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+

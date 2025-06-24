@@ -4,17 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ControlePonto - Sistema de Controle de Ponto para Terceirizados</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">ControlePonto</a>
@@ -23,6 +18,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#apresentacao">Apresentação em Vídeo</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#equipe">Nossa Equipe</a>
                     </li>
@@ -49,13 +47,12 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#diferenciacao">Diferenciação</a>
-
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <header class="hero-section">
         <div class="container">
             <div class="row align-items-center">
@@ -72,7 +69,22 @@
         </div>
     </header>
 
-    <!-- Nossa Equipe Section -->
+    <section id="apresentacao" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Apresentação em Vídeo</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-md-12">
+                    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                        <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                            <source src="video.mp4" type="video/mp4">
+                            Seu navegador não suporta o elemento de vídeo.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="equipe" class="section">
         <div class="container">
             <h2 class="section-title">Nossa Equipe</h2>
@@ -121,7 +133,6 @@
         </div>
     </section>
 
-    <!-- Problema Section -->
     <section id="problema" class="section bg-light">
         <div class="container">
             <h2 class="section-title">Problema a ser Resolvido</h2>
@@ -158,7 +169,6 @@
         </div>
     </section>
 
-    <!-- Solução Section -->
     <section id="solucao" class="section">
         <div class="container">
             <h2 class="section-title">Solução Proposta</h2>
@@ -187,7 +197,6 @@
         </div>
     </section>
 
-    <!-- Mercado Section -->
     <section id="mercado" class="section bg-light">
         <div class="container">
             <h2 class="section-title">Tamanho/Relevância de Mercado</h2>
@@ -235,7 +244,6 @@
         </div>
     </section>
 
-    <!-- Validação Section -->
     <section id="validacao" class="section">
         <div class="container">
             <h2 class="section-title">Validação do Problema e da Solução Proposta</h2>
@@ -276,7 +284,6 @@
         </div>
     </section>
 
-    <!-- Modelo de Negócios Section -->
     <section id="modelo" class="section bg-light">
         <div class="container">
             <h2 class="section-title">Modelo de Negócios</h2>
@@ -287,7 +294,6 @@
             </div>
         </div>
     </section>
-    <!--  Orçamento -->
     <section id="orcamento" class="section">
         <div class="container">
             <h2 class="section-title">Orçamento do Projeto</h2>
@@ -332,7 +338,7 @@
                                 </tr>
                                 <tr class="table-success">
                                     <td colspan="2"><strong>Necessidade de Investimento Inicial (Total)</strong></td>
-                                    <td class="text-end"><strong>R$85.000,00</strong> </td>
+                                    <td class="text-end"><strong>R$85.000,00</strong></td>
                                 </tr>
                                 <tr>
                                     <td rowspan="2"><strong>Projeções Anuais</strong></td>
@@ -394,7 +400,6 @@
 
         </div>
     </section>
-    <!-- Concorrentes Section -->
     <section id="concorrentes" class="section">
         <div class="container">
             <h2 class="section-title">Identificação de Concorrentes</h2>
@@ -432,15 +437,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="competitor-image mt-4">
-                    <p class="text-center">Figura 1: Sistemas de gestão de ponto e escalas na área da saúde.</p>
-                    <p class="text-center text-muted">Fonte: Google imagens (2025).</p>
-                </div>
             </div>
-        </div>
     </section>
 
-    <!-- Diferenciação Section -->
     <section id="diferenciacao" class="section bg-light">
         <div class="container">
             <h2 class="section-title">Diferenciação do Produto</h2>
@@ -470,7 +469,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer bg-dark text-white">
         <div class="container">
             <div class="row">
@@ -493,9 +491,7 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
     <script src="js/main.js"></script>
     
     <style>
@@ -538,4 +534,3 @@
     </style>
 </body>
 </html>
-
